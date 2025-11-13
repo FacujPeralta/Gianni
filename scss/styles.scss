@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(34, 34, 34);
+    color: rgba(255, 255, 255, 0.883);
+
+}
+.container{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: row;
+text-align: center;
+margin-top: 20px;
+gap: 10px;
+
+    h1{
+        font-size: 45px;
+        margin: 0;
+        padding: 0; 
+        color: rgb(254, 153, 0);
+        font-family: 'Gill Sans MT', Calibri, sans-serif;
+        text-shadow: 3px 2px 5px #000000;
+            &:hover{
+            color: rgb(252, 213, 56);
+            text-shadow: 5px 3px 5px #000000;
+            transition: all 0.2s ;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            }
+    }
+
+    title{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 20px;
+        gap: 10px;
+        &:hover{
+            color: rgb(252, 213, 56);
+            text-shadow: 5px 3px 5px #000000;
+            transition: all 0.2s ;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .navegacion {
+    display: flex;
+    justify-content: center;
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 20px;
+        margin: 10px;
+        display: flex;
+        color: rgb(141, 127, 127);;
+            li a{
+                display: flex;
+                border: 2px solid rgb(141, 127, 127);
+                padding: 7px;
+                border-radius: 15px;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .botones a {
+                margin: 25px;
+                display: flex;
+                justify-content: space-around;
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                display: block;
+                color: rgb(141, 127, 127);
+                &:hover {
+                background-color: rgb(254, 153, 0);
+                color: white;
+                transition: all 0.3s;
+                box-shadow: 3px 3px 5px #000000;
+                }
+            }  
+        } 
+    }
+}
+
+.container{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    &:hover ul{
+        transform: scale(1.05);
+        transition: all 1.5s;
+    } 
+}
+
+.tituloGaleria{
+    margin-top: 5rem;
+    font-size: 35px;
+    color: rgb(254, 153, 0);
+    text-shadow: 3px 2px 5px #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+        &:hover img{
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: all 0.5s;
+            }
+    
+        img{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 10px;
+        height:600px;
+        border: 15px;
+        border: solid 1px rgb(0, 110, 255);
+        }  
+        video{
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+        height:600px;
+        border: 15px;
+        border: solid 1px rgb(0, 110, 255); 
+        }       
+    }
+    .recuadro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px;
+        &:hover{
+        cursor: pointer;
+        border-radius: 8%;
+        background-color: rgba(23, 134, 194, 0.314);
+        &:hover img{
+            border: 1px solid rgb(0, 110, 255);
+            border-radius: 15px;
+            transform: scale(1.09);
+        }
+    }
+
+
+
+    .contenedor-fotos {
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+        justify-items: center;
+        img {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 10px;
+        height:600px;
+        border: 15px;
+        border: solid 1px rgb(0, 110, 255);
+            &:hover {
+            transform: scale(1.05);
+        }
+    }
+    button {
+    background-color: #f9d342;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+        &:hover {
+        background-color: #ffe46a;
+        }
+    }
+}
+}
+
+
+/*================================ ESTILOS CONTACTOS ===============================*/
+.contacto{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+    gap: 10px;
+    margin-top: 5rem;
+    .papa{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid rgb(255, 179, 0);
+        border-radius: 15px;
+    }
+    img{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        flex-wrap: wrap;
+        border-radius: 15px;
+        height: 500px;
+        padding: 10px;
+        border: 3px solid rgba(255, 162, 0, 0.637);
+        border-radius: 15px;
+        margin-bottom: 15px;
+        box-shadow: inset 0 0 10px #000000;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.08);
+            transition: all 2s;
+            box-shadow: 0 0 15px #000000;
+            border: none;
+        }
+    }
+    h3{
+        color: rgb(254, 153, 0);
+        font-size: 25px;
+        margin: 15px;
+        padding: 15px;
+        text-shadow: 2px 2px 5px #000000;
+    }
+    p{
+        color: rgb(158, 125, 125);;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+        .mama{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid rgb(255, 179, 0);
+        border-radius: 15px;
+    }
+}
+/**================================ ESTILOS AGG FOTOS ===============================*/
+.contenedor-fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  justify-items: center;
+    img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+        &:hover {
+        transform: scale(1.05);
+        }
+    }
+    button {
+    background-color: #f9d342;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+        &:hover {
+        background-color: #ffe46a;
+        }
+    }
+}
+
+
+.agregar-foto button
+
+/* =====================================inicio de footer=====================================*/
+.final p{
+    color: rgb(141, 127, 127);;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    margin: 25px;
+}
+
+
+
+
+
+/* ============================== INICIO STYLES P/ CELULAR  ========================*/
+ @media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+    }
+    .navegacion ul{
+        flex-direction: column;
+    }
+    .galeria{
+        flex-direction: column;
+    }
+    .contacto .papa, .contacto .mama{
+        width: 80%;
+    }
+    .contenedor-fotos button
+        {
+    background-color: #f9d342;
+    color: #1e1e2f;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+        &:hover {
+        background-color: #ffe46a;
+        }
+    }
+}
+@media (max-width: 320px) {
+  .contenedor-fotos {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .contenedor-fotos img {
+    width: 100%;     /* una por fila */
+    height: auto;    /* mantiene proporción */
+  }
+}
+
+ /* 📱 Celulares medianos (hasta 450px) */
+@media (max-width: 450px) {
+  .contenedor-fotos {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .contenedor-fotos img {
+    width: 100%;     
+    height: auto;
+  }
+}
+
+/* 📱 Celulares grandes / tablets chicas (hasta 660px) */
+@media (max-width: 660px) {
+  .contenedor-fotos {
+    margin: 10px;
+    padding: 5px;
+  }
+  .contacto{
+    .papa{
+        border: none;
+        h3{
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+    .mama{
+        border: none;
+          h3{
+            margin: 10px;
+            padding: 5px;
+        }
+        p{
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+  }
+  .final p{
+    font-size: 12px;
+    margin: 25px;
+    padding: 10px;
+  }
+
+  .contenedor-fotos img {
+    width: 48%;      /* dos por fila */
+    height: 160px;
+  }
+}
+
+/* 💻 Tablets o pantallas intermedias (hasta 750px) */
+@media (max-width: 750px) {
+  .contenedor-fotos {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .contenedor-fotos img {
+    width: 45%;      /* dos por fila con algo más de espacio */
+    height: 180px;
+  }
+}
