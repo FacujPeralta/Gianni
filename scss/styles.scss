@@ -361,6 +361,36 @@ gap: 10px;
   .contenedor-fotos {
     margin: 10px;
     padding: 5px;
+    .contacto{
+    .papa{
+        border: none;
+        h3{
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+    .mama{
+        border: none;
+          h3{
+            margin: 10px;
+            padding: 5px;
+        }
+        p{
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+  }
+  .final p{
+    font-size: 12px;
+    margin: 25px;
+    padding: 10px;
+  }
+
+  .contenedor-fotos img {
+    width: 48%;      /* dos por fila */
+    height: 160px;
+  }
   }
 
   .contenedor-fotos img {
@@ -383,7 +413,7 @@ gap: 10px;
 }
 
 /* 📱 Celulares grandes / tablets chicas (hasta 660px) */
-@media (max-width: 660px) {
+@media (max-width: 350px) {
   .contenedor-fotos {
     margin: 10px;
     padding: 5px;
