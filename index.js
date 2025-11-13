@@ -11,7 +11,7 @@ const botonAgregar = document.getElementById('btn-agregar-foto');
 const inputFoto = document.getElementById('input-foto');
 const contenedorFotos = document.getElementById('contenedor-fotos');
 
-// 📦 Recuperar fotos guardadas al cargar la página
+/* // 📦 Recuperar fotos guardadas al cargar la página
 document.addEventListener('DOMContentLoaded', mostrarFotosGuardadas);
 
 // 📸 Abrir selector de archivos al hacer click en el botón
@@ -65,3 +65,4 @@ function eliminarFoto(src, elemento) {
 
   elemento.remove(); // borra la imagen de la galería
 }
+ */
