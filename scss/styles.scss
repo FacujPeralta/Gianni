@@ -357,47 +357,42 @@ gap: 10px;
         }
     }
 }
-@media (max-width: 320px) {
-  .contenedor-fotos {
-    margin: 10px;
-    padding: 5px;
-    .contacto{
-    .papa{
-        border: none;
-        h3{
-            margin: 10px;
-            padding: 5px;
-        }
+@media (max-width: 450px) {
+    .galeria img,
+    .galeria video {
+        width: 100%;
+        height: auto;     // Para que NO se deformen
+        margin: 10px;
+        padding: 5px;
     }
-    .mama{
-        border: none;
-          h3{
-            margin: 10px;
-            padding: 5px;
-        }
-        p{
-            margin: 10px;
-            padding: 5px;
-        }
+
+    .recuadro {
+        margin: 10px;
+        padding: 5px;
     }
-  }
-  .final p{
-    font-size: 12px;
-    margin: 25px;
-    padding: 10px;
-  }
-
-  .contenedor-fotos img {
-    width: 48%;      /* dos por fila */
-    height: 160px;
-  }
-  }
-
-  .contenedor-fotos img {
-    width: 100%;     /* una por fila */
-    height: auto;    /* mantiene proporción */
-  }
+    .galeria
+    {
+        flex-direction: column;
+        .galeria{
+            img,
+            video{
+                width: 350px;
+                height: auto;
+                margin: 10px;
+                padding: 5px;
+            }
+        }
+        
+    }
+    .title{
+        font-size: 25px;
+        margin: 10px;
+        padding: 5px;
+        justify-content: center;
+        align-self: center;
+    }
 }
+
 
  /* 📱 Celulares medianos (hasta 450px) */
 @media (max-width: 450px) {
