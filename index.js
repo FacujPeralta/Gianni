@@ -11,6 +11,19 @@ const botonAgregar = document.getElementById('btn-agregar-foto');
 const inputFoto = document.getElementById('input-foto');
 const contenedorFotos = document.getElementById('contenedor-fotos');
 
+
+
+// se agg foto de google al azar
+  const boton = document.getElementById('agregarFotoBtn');
+        const galeria = document.getElementById('galeria');
+
+        boton.addEventListener("click", () => {
+            const nuevaImg = document.createElement("img");
+            nuevaImg.src = "https://picsum.photos/300/200?random=" + Math.random();
+            nuevaImg.alt = "Foto agregada";
+
+            galeria.appendChild(nuevaImg);
+        });
 /* // 📦 Recuperar fotos guardadas al cargar la página
 document.addEventListener('DOMContentLoaded', mostrarFotosGuardadas);
 

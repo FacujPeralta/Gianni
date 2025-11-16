@@ -411,44 +411,45 @@ gap: 10px;
     width: 100%;     
     height: auto;
   }
-}
+
 
 /* ===================footer move ==================  */
-.contacto{
-    display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 15px;
-    .papa{
-        width: 80%;
+    .contacto{
         display: flex;
-        img{
-            width: 100%;
-            height: auto;     // Para que NO se deformen
-            margin: 10px;
-            padding: 5px;
-            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            margin: 15px;
+        .papa{
+            width: 80%;
+            display: flex;
+            img{
+                width: 100%;
+                height: auto;     // Para que NO se deformen
+                margin: 10px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .mama{
+            width: 80%;
+            display: flex;
+            img{
+                width: 100%;
+                height: auto;     // Para que NO se deformen
+                margin: 10px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+            }
         }
     }
-      .mama{
-        width: 80%;
-        display: flex;
-        img{
-            width: 100%;
-            height: auto;     // Para que NO se deformen
-            margin: 10px;
+    .final{
+        p{
+            font-size: 12px;
+            margin: 5px;
             padding: 5px;
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
-    }
-}
-.final{
-    p{
-        font-size: 12px;
-        margin: 5px;
-        padding: 5px;
-        text-align: center;
     }
 }
