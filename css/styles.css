@@ -125,30 +125,26 @@
   margin: 20px;
   justify-content: center;
 }
-.galeria:hover img {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: all 0.5s;
-}
 .galeria img {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
   margin: 10px;
   height: 600px;
-  border: 15px;
-  border: solid 1px rgb(0, 110, 255);
+}
+.galeria img:hover {
+  border: none;
 }
 .galeria video {
   display: flex;
   padding: 20px;
   margin: 10px;
   height: 600px;
-  border: 15px;
-  border: solid 1px rgb(0, 110, 255);
 }
-
-.recuadro {
+.galeria video:hover {
+  border: none;
+}
+.galeria .recuadro {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -156,17 +152,15 @@
   padding: 15px;
   margin: 10px;
 }
-.recuadro:hover {
-  cursor: pointer;
-  border-radius: 8%;
-  background-color: rgba(23, 134, 194, 0.314);
-}
-.recuadro:hover:hover img {
-  border: 1px solid rgb(0, 110, 255);
+.galeria .recuadro:hover {
+  box-shadow: 0 0 15px #000000;
+  transform: scale(1.05);
+  transition: all 0.5s;
   border-radius: 15px;
-  transform: scale(1.09);
+  cursor: pointer;
 }
-.recuadro .contenedor-fotos {
+
+.contenedor-fotos {
   display: flex;
   flex-direction: row;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -174,7 +168,7 @@
   margin-top: 20px;
   justify-items: center;
 }
-.recuadro .contenedor-fotos img {
+.contenedor-fotos img {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
@@ -183,10 +177,7 @@
   border: 15px;
   border: solid 1px rgb(0, 110, 255);
 }
-.recuadro .contenedor-fotos img:hover {
-  transform: scale(1.05);
-}
-.recuadro .contenedor-fotos button {
+.contenedor-fotos button {
   background-color: #f9d342;
   color: #1e1e2f;
   border: none;
@@ -197,7 +188,7 @@
   cursor: pointer;
   transition: 0.3s;
 }
-.recuadro .contenedor-fotos button:hover {
+.contenedor-fotos button:hover {
   background-color: #ffe46a;
 }
 
@@ -316,7 +307,7 @@
 }
 
 /* ============================== INICIO STYLES P/ CELULAR  ========================*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
   .container {
     flex-direction: column;
   }
@@ -327,7 +318,7 @@
     flex-direction: column;
   }
   .contacto .papa, .contacto .mama {
-    width: 80%;
+    width: auto;
   }
   .contenedor-fotos button {
     background-color: #f9d342;
@@ -344,14 +335,34 @@
     background-color: #ffe46a;
   }
 }
-@media (max-width: 320px) {
-  .contenedor-fotos {
+@media (max-width: 600px) {
+  .galeria img,
+  .galeria video {
+    width: 100%;
+    height: auto;
     margin: 10px;
     padding: 5px;
   }
-  .contenedor-fotos img {
-    width: 100%; /* una por fila */
-    height: auto; /* mantiene proporción */
+  .recuadro {
+    margin: 10px;
+    padding: 5px;
+  }
+  .galeria {
+    flex-direction: column;
+  }
+  .galeria .galeria img,
+  .galeria .galeria video {
+    width: 350px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+  }
+  .title {
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-self: center;
   }
 }
 /* 📱 Celulares medianos (hasta 450px) */
@@ -366,7 +377,7 @@
   }
 }
 /* 📱 Celulares grandes / tablets chicas (hasta 660px) */
-@media (max-width: 660px) {
+@media (max-width: 350px) {
   .contenedor-fotos {
     margin: 10px;
     padding: 5px;
