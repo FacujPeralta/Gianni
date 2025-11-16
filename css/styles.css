@@ -367,6 +367,20 @@
 }
 /* 📱 Celulares medianos (hasta 450px) */
 @media (max-width: 450px) {
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+  }
+  .galeria img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
   .contenedor-fotos {
     margin: 10px;
     padding: 5px;
@@ -376,50 +390,43 @@
     height: auto;
   }
 }
-/* 📱 Celulares grandes / tablets chicas (hasta 660px) */
-@media (max-width: 350px) {
-  .contenedor-fotos {
-    margin: 10px;
-    padding: 5px;
-  }
-  .contacto .papa {
-    border: none;
-  }
-  .contacto .papa h3 {
-    margin: 10px;
-    padding: 5px;
-  }
-  .contacto .mama {
-    border: none;
-  }
-  .contacto .mama h3 {
-    margin: 10px;
-    padding: 5px;
-  }
-  .contacto .mama p {
-    margin: 10px;
-    padding: 5px;
-  }
-  .final p {
-    font-size: 12px;
-    margin: 25px;
-    padding: 10px;
-  }
-  .contenedor-fotos img {
-    width: 48%; /* dos por fila */
-    height: 160px;
-  }
+/* ===================footer move ==================  */
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px;
 }
-/* 💻 Tablets o pantallas intermedias (hasta 750px) */
-@media (max-width: 750px) {
-  .contenedor-fotos {
-    margin: 10px;
-    padding: 5px;
-  }
-  .contenedor-fotos img {
-    width: 45%; /* dos por fila con algo más de espacio */
-    height: 180px;
-  }
+.contacto .papa {
+  width: 80%;
+  display: flex;
+}
+.contacto .papa img {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.contacto .mama {
+  width: 80%;
+  display: flex;
+}
+.contacto .mama img {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.final p {
+  font-size: 12px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
