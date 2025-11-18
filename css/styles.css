@@ -17,8 +17,8 @@
   gap: 10px;
 }
 .container h1 {
-  font-size: 45px;
-  margin: 0;
+  font-size: 75px;
+  margin: 25px;
   padding: 0;
   color: rgb(254, 153, 0);
   font-family: "Gill Sans MT", Calibri, sans-serif;
@@ -206,6 +206,7 @@
 }
 .contacto .papa {
   width: 30%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,6 +254,7 @@
 }
 .contacto .mama {
   width: 30%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,73 +309,27 @@
 }
 
 /* ============================== INICIO STYLES P/ CELULAR  ========================*/
-@media only screen and (max-width: 300px) {
+/* 📱 Celulares medianos (hasta 450px) */
+@media (max-width: 450px) {
   .container {
     flex-direction: column;
   }
-  .navegacion ul {
+  .container .container h1 {
+    font-size: 20px;
+  }
+  .container .container h1 .title {
+    font-size: 15px;
+  }
+  .container .container h1 .navegacion ul {
     flex-direction: column;
   }
-  .galeria {
-    flex-direction: column;
-  }
-  .contacto .papa, .contacto .mama {
-    width: auto;
-  }
-  .contenedor-fotos button {
-    background-color: #f9d342;
-    color: #1e1e2f;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-weight: bold;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .contenedor-fotos button:hover {
-    background-color: #ffe46a;
-  }
-}
-@media (max-width: 600px) {
-  .galeria img,
-  .galeria video {
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    padding: 5px;
-  }
-  .recuadro {
-    margin: 10px;
-    padding: 5px;
-  }
-  .galeria {
-    flex-direction: column;
-  }
-  .galeria .galeria img,
-  .galeria .galeria video {
-    width: 350px;
-    height: auto;
-    margin: 10px;
-    padding: 5px;
-  }
-  .title {
-    font-size: 25px;
-    margin: 10px;
-    padding: 5px;
-    justify-content: center;
-    align-self: center;
-  }
-}
-/* 📱 Celulares medianos (hasta 450px) */
-@media (max-width: 450px) {
-  .galeria {
+  .container .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 15px;
   }
-  .galeria img {
+  .container .galeria img {
     width: 100%;
     height: auto;
     margin: 10px;
@@ -381,52 +337,53 @@
     display: flex;
     justify-content: center;
   }
-  .contenedor-fotos {
+  .container .contenedor-fotos {
     margin: 10px;
     padding: 5px;
   }
-  .contenedor-fotos img {
+  .container .contenedor-fotos img {
     width: 100%;
     height: auto;
   }
-}
-/* ===================footer move ==================  */
-.contacto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 15px;
-}
-.contacto .papa {
-  width: 80%;
-  display: flex;
-}
-.contacto .papa img {
-  width: 100%;
-  height: auto;
-  margin: 10px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
-.contacto .mama {
-  width: 80%;
-  display: flex;
-}
-.contacto .mama img {
-  width: 100%;
-  height: auto;
-  margin: 10px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-.final p {
-  font-size: 12px;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
+  .container {
+    /* ===================footer move ==================  */
+  }
+  .container .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+  }
+  .container .contacto .papa {
+    width: 80%;
+    display: flex;
+  }
+  .container .contacto .papa img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .container .contacto .mama {
+    width: 80%;
+    display: flex;
+  }
+  .container .contacto .mama img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .container .final p {
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

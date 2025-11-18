@@ -79,3 +79,5 @@ function eliminarFoto(src, elemento) {
   elemento.remove(); // borra la imagen de la galería
 }
  */
+
+
