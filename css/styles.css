@@ -349,7 +349,7 @@
     width: 100%;
     height: auto;
   }
-  .container {
+
     /* ===================contacto move ==================  */
   }
   .container .contacto {
@@ -360,7 +360,7 @@
   }
   .container {
     /* ===================footer move ==================  */
-  }
+  
   .container .final p {
     font-size: 12px;
     margin: 5px;
