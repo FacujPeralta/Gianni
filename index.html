@@ -26,7 +26,8 @@
     </main>
     <header>
            <h4 class="tituloGaleria"  id="fotos">MI GALERIA</h4>
-            <div class="galeria">
+            <div class="galeria modal" id="modal">
+                <span class="cerrar">&times;</span>
               <!-- <button id="btn-agregar-foto">Agregar Foto</button>-->   
                     <div id="contenedor-fotos" class="contenedor-fotos">
                         <!-- Acá se agregan las fotos -->
@@ -35,10 +36,9 @@
                         <input type="file" id="input-foto" accept="image/*" style="display: none;">
                     
                     </div>
-                <div class="recuadro">
+                <div class="recuadro modal-img" id="img-grande">
                     <img  src="./img/WhatsApp Image 2025-11-01 at 20.10.42.jpeg" alt="PRIMERA IMAGEN">
                 </div>
-                
                  <div class="recuadro">
                     <img  src="./img/20250825_124535.jpg" alt="">
                 </div>
@@ -274,7 +274,7 @@
                 </div>
                  <div class="recuadro">
                     <video src="./video/VID-20251113-WA0000.mp4" alt="">
-                </div>                            
+                </div>                       
             </div>   
                 
       

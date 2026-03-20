@@ -13,7 +13,7 @@ const contenedorFotos = document.getElementById('contenedor-fotos');
 
 
 
-// se agg foto de google al azar
+//se agg foto de google al azar
   const boton = document.getElementById('agregarFotoBtn');
         const galeria = document.getElementById('galeria');
 
@@ -24,7 +24,7 @@ const contenedorFotos = document.getElementById('contenedor-fotos');
 
             galeria.appendChild(nuevaImg);
         });
-/* // 📦 Recuperar fotos guardadas al cargar la página
+ // 📦 Recuperar fotos guardadas al cargar la página
 document.addEventListener('DOMContentLoaded', mostrarFotosGuardadas);
 
 // 📸 Abrir selector de archivos al hacer click en el botón
@@ -44,7 +44,7 @@ inputFoto.addEventListener('change', (e) => {
   }
 });
 
-// ➕ Agregar una foto visualmente en la galería
+ // ➕ Agregar una foto visualmente en la galería
 function agregarFoto(src) {
   const nuevaImagen = document.createElement('img');
   nuevaImagen.src = src;
@@ -78,6 +78,41 @@ function eliminarFoto(src, elemento) {
 
   elemento.remove(); // borra la imagen de la galería
 }
- */
 
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("img-grande");
+const cerrar = document.querySelector(".cerrar");
+
+const imagenes = document.querySelectorAll(".img-click");
+let indexActual = 0;
+
+// abrir imagen
+imagenes.forEach((img, index) => {
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        indexActual = index;
+    }
+});
+
+// cerrar
+cerrar.onclick = () => modal.style.display = "none";
+
+// flechas
+document.querySelector(".derecha").onclick = () => {
+    indexActual++;
+    if (indexActual >= imagenes.length) indexActual = 0;
+    modalImg.src = imagenes[indexActual].src;
+};
+
+document.querySelector(".izquierda").onclick = () => {
+    indexActual--;
+    if (indexActual < 0) indexActual = imagenes.length - 1;
+    modalImg.src = imagenes[indexActual].src;
+};
+
+// cerrar tocando fondo
+modal.onclick = (e) => {
+    if (e.target === modal) modal.style.display = "none";
+};
 
